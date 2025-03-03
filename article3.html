@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-технологии</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Образовательный сайт по веб-технологиям
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="article1.html">Основы HTML</a>
+        <a href="article2.html">Основы CSS</a>
+        <a href="article3.html">Основы JavaScript</a>
+        <a href="about.html">Автор</a>
+    </nav>
+    <div class="container">
+        <div class="article">
+            <h2>Основы JavaScript</h2>
+            <p>JavaScript — это язык программирования, который позволяет добавлять интерактивность на веб-страницы.</p>
+            
+            <h3>Основные возможности JavaScript</h3>
+            <ul>
+                <li>Манипуляция с HTML и CSS (DOM).</li>
+                <li>Обработка событий (клики, ввод с клавиатуры).</li>
+                <li>Взаимодействие с сервером (AJAX, Fetch API).</li>
+                <li>Работа с локальным хранилищем (localStorage, sessionStorage).</li>
+                <li>Создание динамического контента.</li>
+            </ul>
+
+            <h3>Простой пример JavaScript</h3>
+            <pre><code>document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("h2").style.color = "blue";
+});</code></pre>
+
+            <h3>Заключение</h3>
+            <p>JavaScript — мощный инструмент для создания динамичных и интерактивных веб-приложений. Он является основным языком фронтенд-разработки и активно используется в современных веб-проектах.</p>
+        </div>
+    </div>
+</body>
+</html>

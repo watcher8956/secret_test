@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-технологии</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Образовательный сайт по веб-технологиям
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="article1.html">Основы HTML</a>
+        <a href="article2.html">Основы CSS</a>
+        <a href="article3.html">Основы JavaScript</a>
+        <a href="about.html">Автор</a>
+    </nav>
+    <div class="container">
+        <div class="article">
+            <h2>Основы HTML</h2>
+            <p>HTML (HyperText Markup Language) — это язык разметки, используемый для создания структуры веб-страниц.</p>
+            
+            <h3>Основные теги</h3>
+            <ul>
+                <li><code>&lt;html&gt;</code> — корневой элемент HTML-документа.</li>
+                <li><code>&lt;head&gt;</code> — содержит метаинформацию о странице.</li>
+                <li><code>&lt;body&gt;</code> — основной контент страницы.</li>
+                <li><code>&lt;h1&gt; - &lt;h6&gt;</code> — заголовки разного уровня.</li>
+                <li><code>&lt;p&gt;</code> — абзац текста.</li>
+                <li><code>&lt;a href=\"\"&gt;</code> — ссылка.</li>
+                <li><code>&lt;img src=\"\" alt=\"\"&gt;</code> — изображение.</li>
+                <li><code>&lt;ul&gt;</code> и <code>&lt;li&gt;</code> — маркированный список.</li>
+            </ul>
+
+            <h3>Простой пример HTML-страницы</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=\"ru\"&gt;
+&lt;head&gt;
+    &lt;meta charset=\"UTF-8\"&gt;
+    &lt;title&gt;Моя первая страница&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+    &lt;p&gt;Это моя первая HTML-страница.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h3>Заключение</h3>
+            <p>HTML — это основа веб-разработки. Освоив его, вы сможете создавать простые веб-страницы и далее изучать CSS и JavaScript для улучшения дизайна и интерактивности.</p>
+        </div>
+    </div>
+</body>
+</html>

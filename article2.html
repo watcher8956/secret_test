@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-технологии</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Образовательный сайт по веб-технологиям
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="article1.html">Основы HTML</a>
+        <a href="article2.html">Основы CSS</a>
+        <a href="article3.html">Основы JavaScript</a>
+        <a href="about.html">Автор</a>
+    </nav>
+    <div class="container">
+        <div class="article">
+            <h2>Основы CSS</h2>
+            <p>CSS (Cascading Style Sheets) — это язык стилей, который используется для оформления HTML-документов.</p>
+            
+            <h3>Основные свойства CSS</h3>
+            <ul>
+                <li><code>color</code> — цвет текста.</li>
+                <li><code>background-color</code> — цвет фона элемента.</li>
+                <li><code>font-size</code> — размер шрифта.</li>
+                <li><code>margin</code> — внешние отступы.</li>
+                <li><code>padding</code> — внутренние отступы.</li>
+                <li><code>border</code> — граница элемента.</li>
+                <li><code>display</code> — способ отображения элемента.</li>
+                <li><code>flexbox</code> и <code>grid</code> — современные технологии разметки.</li>
+            </ul>
+
+            <h3>Простой пример CSS</h3>
+            <pre><code>body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+h1 {
+    color: #007bff;
+}</code></pre>
+
+            <h3>Заключение</h3>
+            <p>CSS позволяет создавать красивые и удобные сайты. Освоив его, вы сможете улучшить внешний вид страниц и сделать их более привлекательными для пользователей.</p>
+        </div>
+    </div>
+</body>
+</html>
